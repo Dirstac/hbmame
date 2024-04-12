@@ -81,6 +81,7 @@
 
 #include "corestr.h"
 #include "emuopts.h"
+#include "drivenum.h"				//缘来是你 无UI版
 #include "fileio.h"
 
 #include <cstring>
@@ -89,8 +90,7 @@
 
 #include <cctype>
 
-
-
+//extern const char *funcGetParentName(const char *name);	//缘来是你 作弊替换UI版
 //**************************************************************************
 //  PARAMETERS
 //**************************************************************************
@@ -98,7 +98,37 @@
 // turn this on to enable removing duplicate cheats; not sure if we should
 #define REMOVE_DUPLICATE_CHEATS 0
 
+//	缘来是你 作弊替换无UI版	开始
+int GetGameNameIndex(const char *name)
+{
+	return driver_list::find(name);
+}
 
+const char * GetDriverGameName(int nIndex)
+{
+	return driver_list::driver(nIndex).name;
+}
+
+
+int GetParentIndex(const game_driver *driver)
+{
+	return GetGameNameIndex(driver->parent);
+}
+
+const char *funcGetParentName(const char *name)
+{
+	int index = GetGameNameIndex(name);// get current game index
+	int parentindex = GetParentIndex(&driver_list::driver(index));
+	//int parentindex = GetParentIndex_2(index);		   // get Parent current game
+	if( parentindex >= 0)
+	{
+		const char *parentname =  GetDriverGameName(parentindex);
+		return parentname;
+	}
+
+	return NULL;
+}
+//	缘来是你 无UI版	结束
 
 //**************************************************************************
 //  NUMBER AND FORMAT
@@ -853,6 +883,23 @@ bool cheat_entry::select_default_state()
 	return changed;
 }
 
+// 缘来是你 UI作弊替换
+//bool cheat_entry::select_all_set_state()
+//{
+//	bool changed(false);
+//
+//	if (is_oneshot())
+//	{
+//		// if we're a oneshot cheat, there is no default state
+//	}
+//	else
+//	{
+//		// all other types switch to the "off" state
+//		changed = set_state(SCRIPT_STATE_ON);
+//	}
+//
+//	return changed;
+//}
 
 //-------------------------------------------------
 //  select_previous_state - select the previous
@@ -1182,7 +1229,24 @@ void cheat_manager::reload()
 
 	// if we haven't found the cheats yet, load by basename
 	if (m_cheatlist.empty())
+	{
+		//const char *parentname = GetParentName(machine().basename());
+		//if(parentname !=NULL)
+		//	machine().popmessage(parentname);
+		
 		load_cheats(machine().basename());
+		// 缘来是你 开始
+		// 子rom若无作弊文件，则使用父rom文件
+		if(m_cheatlist.size()==0) 
+		{
+			const char *parentname = funcGetParentName(machine().basename().c_str());
+			if(parentname !=NULL)
+				load_cheats(parentname);
+
+			//machine().popmessage("No Cheat");
+		}		
+		// 缘来是你 结束
+	}
 
 	// temporary: save the file back out as output.xml for comparison
 	if (m_cheatlist.size() != 0)
@@ -1404,7 +1468,7 @@ void cheat_manager::load_cheats(std::string const &filename)
 		// loop over all instances of the files found in our search paths
 		for (std::error_condition filerr = cheatfile.open(filename + ".xml"); !filerr; filerr = cheatfile.open_next())
 		{
-			osd_printf_verbose("Loading cheats file from %s\n", cheatfile.fullpath());
+			osd_printf_verbose("正在从%s加载作弊文件\n", cheatfile.fullpath());
 
 			// read the XML file into internal data structures
 			util::xml::parse_options options = { nullptr };
@@ -1414,17 +1478,17 @@ void cheat_manager::load_cheats(std::string const &filename)
 
 			// if unable to parse the file, just bail
 			if (!rootnode)
-				throw emu_fatalerror("%s.xml(%d): error parsing XML (%s)\n", filename, error.error_line, error.error_message);
+				throw emu_fatalerror("%s.xml（%d）： 解析 XML 时出错 （%s）\n", filename, error.error_line, error.error_message);
 
 			// find the layout node
 			util::xml::data_node const *const mamecheatnode(rootnode->get_child("mamecheat"));
 			if (mamecheatnode == nullptr)
-				throw emu_fatalerror("%s.xml: missing mamecheatnode node", filename);
+				throw emu_fatalerror("%s.xml： 缺少 mame 作弊节点", filename);
 
 			// validate the config data version
 			int const version(mamecheatnode->get_attribute_int("version", 0));
 			if (version != CHEAT_VERSION)
-				throw emu_fatalerror("%s.xml(%d): Invalid cheat XML file: unsupported version", filename, mamecheatnode->line);
+				throw emu_fatalerror("%s.xml（%d）： 无效的作弊 XML 文件： 不支持的版本", filename, mamecheatnode->line);
 
 			// parse all the elements
 			for (util::xml::data_node const *cheatnode = mamecheatnode->get_child("cheat"); cheatnode != nullptr; cheatnode = cheatnode->get_next_sibling("cheat"))
@@ -1437,7 +1501,7 @@ void cheat_manager::load_cheats(std::string const &filename)
 					// make sure we're not a duplicate
 					if (REMOVE_DUPLICATE_CHEATS && curcheat->is_duplicate())
 					{
-						osd_printf_verbose("Ignoring duplicate cheat '%s' from file %s\n", curcheat->description(), cheatfile.fullpath());
+						osd_printf_verbose("忽略文件 %s 中的重复作弊 '%s'\n", curcheat->description(), cheatfile.fullpath());
 					}
 					else
 					{
