@@ -1,6 +1,19 @@
 ﻿What's new in HBMAME
 ====================
 
+2024-0x-xx 0.245.19
+
+
+New Games
+---------------------------------
+- [ckongpt2s02]         Crazy Kong Part II 2023 revision
+- [dkong22]             Donkey Kong (hitboxes)
+- [dkong23]             Donkey Kong (hitboxes and sprites)
+- [oldsps28]            Oriental Legend 2 (New Revision CN)
+
+
+
+
 2024-04-10 0.245.18
 
 - New PGM driver from IQ_132
