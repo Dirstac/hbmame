@@ -1,15 +1,59 @@
 ﻿What's new in HBMAME
 ====================
 
-2024-0x-xx 0.245.19
+2024-0x-xx 0.245.21
 
 
 New Games
 ---------------------------------
+- [dkongjr01]           Donkey Kong Junior (bugfixed)
+- [kof94s40]            Kof'94 (Team Edit Edition v1.4.0)
+- [sf2ce59]             Street Fighter II' (Golden Magic)
+- [sfz3mix]             Street Fighter Zero 3 (Turbo Mix 0.31) [zero800]
+- [ssf2t10]             Super Street Fighter II Turbo (940223U, difficulty fix)
+
+
+
+
+2024-06-20 0.245.20
+
+ngneo: expanded the software list
+
+
+New Games
+---------------------------------
+- [au]                  Au
+- [gladmortd2]          Gladmort (Demo 2)
+- [kof94s39]            Kof'94 (Team Edit Edition v1.3.0)
+- [nbajam04]            NBA Jam Rewind (rev 1.2)
+- [sfz3mix30]           Street Fighter Zero 3 (Turbo Mix 0.30) [zero800]
+
+
+
+
+2024-05-18 0.245.19
+
+
+- New compiler version: GCC 13.2
+- Dropped support for universal bios before 3.0
+
+
+New Games
+---------------------------------
+- [breakrev08]          Breakers Revenge (Extra)
 - [ckongpt2s02]         Crazy Kong Part II 2023 revision
 - [dkong22]             Donkey Kong (hitboxes)
 - [dkong23]             Donkey Kong (hitboxes and sprites)
+- [ffight04]            Final Fight (Framework, 2022-01-25)
+- [gladmortd]           Gladmort (Demo)
+- [karnovr04]           Karnov's Revenge (Revolution v0.1)
+- [kodu04]              The King of Dragons (910910U, Tough Plus, 2021-06-22)
 - [oldsps28]            Oriental Legend 2 (New Revision CN)
+- [samsho2pe]           Samurai Shodown II (Perfect v2.0, 2024-05-01)
+- [sfa2s11]             Street Fighter Alpha 2 (960430U, Ultra Edition)
+- [sfz3mix29]           Street Fighter Zero 3 (Turbo Mix 0.29) [zero800]
+- [wakuwak7s05]         Waku Waku 7 (Enhanced, 2023-06-06)
+- [yoyoshkn]            Yo-Yo Shuriken
 
 
 
@@ -30,7 +74,7 @@ New Games
 - [pgmcabal]            Cabal (PGM) [iq_132]
 - [pgmsnake]            PGM test program [iq_132]
 - [sf2ce58]             Street Fighter II' (SrSreet edition)
-- [sfz3mix]             Street Fighter Zero 3 (Turbo Mix 0.28) [zero800]
+- [sfz3mix28]           Street Fighter Zero 3 (Turbo Mix 0.28) [zero800]
 - [ssf2tnl]             Super Street Fighter II Turbo (New Legacy v0.9 beta 2024-04-02)
 
 
