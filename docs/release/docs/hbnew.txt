@@ -1,7 +1,7 @@
 ﻿What's new in HBMAME
 ====================
 
-2024-0x-xx 0.245.21
+2024-11-13 0.245.21
 
 
 New Games
@@ -10,9 +10,20 @@ New Games
 - [bubblemu01]          Bubble Memories: Black Edition (USA)
 - [dilith]              Dilithium Lift
 - [dkongjr01]           Donkey Kong Junior (bugfixed)
+- [galaga03]            Galaga Challenging Only (2024-03-26)
 - [knightsch]           Knight's Chance
-- [kof94s40]            Kof'94 (Team Edit Edition v1.4.0)
+- [kof94s40]            Kof'94 (Team Edit Edition v1.4.2)
+- [quarth01]            Quarth (Cooperative)
+- [redearthep]          Red Earth (NO CD, Easy Password)
 - [sf2ce59]             Street Fighter II' (Golden Magic)
+- [sf2ce60]             Street Fighter II': Champion Edition (Aimed Barrels)
+- [sf2ce61]             Street Fighter II': Champion Edition (Aimed Fires)
+- [sf2ce62]             Street Fighter II': Champion Edition (Barrels of Fun)
+- [sf2ce63]             Street Fighter II': Champion Edition (Bird in Hand)
+- [sf2ce64]             Street Fighter II': Champion Edition (Burning Fires)
+- [sf2ce65]             Street Fighter II': Champion Edition (Fire Serpent)
+- [sf2ce66]             Street Fighter II': Champion Edition (Vampiric)
+- [sf2ce67]             Street Fighter II': Champion Edition (L735 [CL1785])
 - [sfz3mix]             Street Fighter Zero 3 (Turbo Mix 0.31) [zero800]
 - [ssf2t10]             Super Street Fighter II Turbo (940223U, difficulty fix)
 
