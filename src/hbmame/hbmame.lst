@@ -6066,7 +6066,7 @@ ssideki			// 052
 //ssideki2		// 061  not needed
 //ssideki3		// 081  not needed
 ssideki4		// 215
-stakwin	                               // 088  music broken in mame, works here
+//stakwin	                               // 088  music broken in mame, works here
 //stakwin2		// 227  not needed
 stakwindev                             // totally broken in mame, partially works here.
 strhoop			// 079
@@ -6110,7 +6110,8 @@ cabalng
 cabalng1
 cakefght
 cakefght1
-caravan				// HB
+caravan                                // HB
+cbarrel                                // HB
 cndi		/* Chip n Dale Intro */
 cndia
 cnbe
