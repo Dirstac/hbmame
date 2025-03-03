@@ -1956,7 +1956,6 @@ galinvad	/* T-Bone hack of Galaxian */
 galxtest1
 galxtest2
 gaylaxn		/* The Dog hack of Galaxian Part X */
-jumpbugx	// extra sounds
 vectrgal	/* T-Bone hack of Galaxian */
 fourplay
 videight	/* 8in1 multigame */
@@ -4231,6 +4230,7 @@ aliencha02
 @source:m52.cpp
 alpha1v		// Kyle Hodgetts
 mpatrol		//parent
+mpatrolut
 spatrol		/* Sponge Patrol - Gatinho 2008 */
 
 @source:m92.cpp
@@ -4293,6 +4293,8 @@ pacmtest
 pacmtest1
 pacmtest2
 pactetris		// HB
+pakupaku                               // HB
+pakupaku2                              // HB
 pollen                                 // HB
 ppong			/* HB - Widel Games */
 ppong2			/* HB - Widel Games */
@@ -6066,7 +6068,7 @@ ssideki			// 052
 //ssideki2		// 061  not needed
 //ssideki3		// 081  not needed
 ssideki4		// 215
-stakwin	                               // 088  music broken in mame, works here
+//stakwin		// 088  not needed
 //stakwin2		// 227  not needed
 stakwindev                             // totally broken in mame, partially works here.
 strhoop			// 079
@@ -6106,11 +6108,13 @@ badapplea
 badappleb
 beast		/* 2002 (c) 1989 Psygnosis */
 bonusstage                             // HB
-cabalng
-cabalng1
-cakefght
-cakefght1
-caravan				// HB
+bpanicdx                               // HB
+cabalng                                // port
+cabalng1                               // port
+cakefght                               // port
+cakefght1                              // port
+caravan                                // HB
+cbarrel                                // HB
 cndi		/* Chip n Dale Intro */
 cndia
 cnbe
@@ -6124,24 +6128,31 @@ cyborg1
 ddsprdmo
 ddsprdmo1
 didemo
+doubled
+doubled1
 dti			// Duck Tales Intro
 dtia		// Duck Tales Intro
 dwi			/* DarkWing Duck Intro */
 dwia
 ffeast		// Frog Feast
 ffeastd		// Frog Feast demo
+flapchck
 fr2			// 098 Idol Mahjong - final romance 2
 fr2cd		/* 098 (c) 1995 Video Systems Co. */
 fr2ch		/* 098 (c) 1995 Video Systems Co. */
 galaxiann
+galaxiann2
 gbi
 gladmortd
 gladmortd2
+goldaxen
 gxg
 horekidb3
 hypernoid
 //igla
 iocero		// BEY
+jumpnrund
+karnovn
 knacki		// KnackiBalls by Furrtek
 knightsch
 lernit
@@ -6197,12 +6208,14 @@ pcmbdemo	// 2015 freem
 poknight	/* 2003 (c) 200? JMK */
 poknightcd
 poknightfr
+pown
 //raroggame
 rci			/* Robocop intro */
 samantha
 santabll
 sbpf
 seafight
+sgz                                    // runs for a few seconds then black screen
 shaman16
 //shaman17
 //shaman18
@@ -6212,6 +6225,9 @@ shaman20
 //shaman22
 //shaman23
 //shaman24
+shinobin
+shinobin1
+shinobint
 smi			/* Spiderman intro */
 snddemo		// Sound-Loop Demo by Freem
 spriteex	// furrtek Sprite Experimenter
@@ -6377,7 +6393,6 @@ nitd04
 nitd05
 nitd06
 nitd07
-nitd08
 pzlcrz
 pbcrazyb1
 pbcrazyb2
@@ -6862,6 +6877,7 @@ samsho2emb
 samsho2hy
 samsho2mb
 samsho2pe
+samsho2pe1
 samsho2q
 samsho2s2
 samsho2sp

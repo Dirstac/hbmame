@@ -5,9 +5,9 @@ echo Pre-compile steps
 echo.
 rem echo 1. HBMAME - CLEAN, update MAKEFILE, update VERSION.CPP
 rem echo.
-echo 2. ARCADE - CLEAN, update MAKEFILE, update WINUI.H
+echo 2. ARCADE - CLEAN, update MAKEFILE
 echo.
-echo 3. MAMEUI - CLEAN, update MAKEFILE, update VERSION.CPP and run SWLIST
+echo 3. MAMEUI - CLEAN, update MAKEFILE and run SWLIST
 rem echo.
 echo 4. When this is all done, then
 pause
@@ -42,6 +42,7 @@ copy /Y src\mame\arcade.txt src\mame\arcade.flt
 touch src\mame\arcade.flt
 call make64 -j6 "OSD=winui" %1 %2 %3
 copy /Y src\mame\arcade.bak src\mame\arcade.flt
+del arcade.exe
 copy /Y arcade64.exe arcade.exe
 
 if not exist arcade64.exe goto end
