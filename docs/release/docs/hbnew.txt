@@ -7,7 +7,8 @@
 
 New Games
 ---------------------------------
-[mk08]                  Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta)
+[mk08]                  Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
+[mk2s07]                Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
 
 
 
