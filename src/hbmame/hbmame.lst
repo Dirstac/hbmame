@@ -4468,6 +4468,7 @@ umk2s04
 umk2s05                                // Ultimate MKII Tournament Edition r5.0.053
 
 @source:midwunit.cpp
+mk08
 mk3                                    //parent
 mk3s01
 mk3s02
