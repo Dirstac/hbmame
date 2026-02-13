@@ -12,6 +12,7 @@ New Games
 - [doubledr21]          Double Dragon (Special 2017 v1.0.0311 2023)
 - [doubledr22]          Double Dragon (Plus 2015-03-11)
 - [doubledr23]          Double Dragon (Optimized 2014-09-17)
+- [fatfury2s05]         Fatal Fury 2 (Alternate board)
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
