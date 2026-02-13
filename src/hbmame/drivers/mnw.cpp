@@ -1,6 +1,6 @@
 // license:GPL_2.0
 // copyright-holders:Robbbert
-// These games are not working, and are stored here just in case
+// These games are not working, or old, and are stored here just in case
 
 // kodd and kodud - Phoenix versions - both have rom mismatches which cause incorrect code to be
 //                                     executed leading to an ADDRESS ERROR
@@ -25966,4 +25966,7 @@ GAME( 2025, sf2prime60a,hsf2,     dead_cps2, cps2_2p6b, cps2_state, init_cps2, R
 GAME( 2025, sf2prime63, hsf2,     dead_cps2, cps2_2p6b, cps2_state, init_cps2, ROT0, "Zero800", "Street Fighter II': Prime (v0.63)", MACHINE_SUPPORTS_SAVE )
 GAME( 2025, sf2prime66, hsf2,     dead_cps2, cps2_2p6b, cps2_state, init_cps2, ROT0, "Zero800", "Street Fighter II': Prime (v0.66)", MACHINE_SUPPORTS_SAVE )
 GAME( 2026, sf2prime,   hsf2,     dead_cps2, cps2_2p6b, cps2_state, init_cps2, ROT0, "Zero800", "Street Fighter II': Prime (v0.70)", MACHINE_SUPPORTS_SAVE )
+
+
+// ------------------------------------- DONKEY KONG --------------- These work, but are old versions -----------------
 
