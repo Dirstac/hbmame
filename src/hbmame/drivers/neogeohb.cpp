@@ -1435,6 +1435,26 @@ ROM_START( jumpnrund )
 	ROM_LOAD16_BYTE( "412.c2", 0x000001, 0x80000, CRC(38f8b27e) SHA1(d621220bacb0d8da78acb83f10bc56bf6b988db6) )
 ROM_END
 
+ROM_START( jumpnrund01 )
+	ROM_REGION( 0x100000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "412a.p1", 0x000000, 0x080000, CRC(e2d0dcf3) SHA1(51864e7506f8364ec52da92cd18aef292f8aba94) )
+
+	NEO_SFIX_128K( "412a.s1", CRC(acc6a2a3) SHA1(77fc4397b838a7d49e9fce8e94151bc62256c9fe) )
+
+	NEO_BIOS_AUDIO_64K( "412.m1", CRC(30094ef9) SHA1(1f2b2caa7155e8b4bc9c90641d664c9d1fe2061b) )
+
+	ROM_REGION( 0x80000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "412.v11",  0x000000, 0x080000, CRC(01a1a847) SHA1(6f82532101e19d9a60a495d562b4ef0836b10124) )
+
+	ROM_REGION( 0x100000, "ymsnd:adpcmb", 0 )
+	ROM_LOAD( "412.v21",  0x000000, 0x080000, CRC(398c3d56) SHA1(f9724345908abf2abdfd1e92e29ac7307ccc46e9) )
+	ROM_LOAD( "412.v22",  0x080000, 0x080000, CRC(47aa9572) SHA1(de02801e619537ad336361eda29ee40818de6a5c) )
+
+	ROM_REGION( 0x100000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "412.c1", 0x000000, 0x80000, CRC(0164735f) SHA1(e5049f7bc39c6dbe886b29dac59850a333a4b58b) )
+	ROM_LOAD16_BYTE( "412.c2", 0x000001, 0x80000, CRC(38f8b27e) SHA1(d621220bacb0d8da78acb83f10bc56bf6b988db6) )
+ROM_END
+
 
 // 413 : Looptris by Blastar 2021-12-26
 ROM_START( looptris )
@@ -4198,7 +4218,8 @@ GAME( 2021, hypernoid01,  neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init
 GAME( 2018, igla,         neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Vasily Familiya", "Operation I.G.L.A. demo", MACHINE_IS_INCOMPLETE | MACHINE_SUPPORTS_SAVE )
 GAME( 2025, inthuntn,     neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Balek Corp / Neo Byte Force", "In the Hunt demo (2025-05-18)", MACHINE_SUPPORTS_SAVE )
 GAME( 2013, iocero,       neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "iocerom", "Primo Demo", MACHINE_SUPPORTS_SAVE )
-GAME( 2020, jumpnrund,    neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Jump n Run Tech Demo", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, jumpnrund,    neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Jump n Run Tech Demo (Nov 2020)", MACHINE_SUPPORTS_SAVE )
+GAME( 2020, jumpnrund01,  neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Blastar", "Jump n Run Tech Demo (Dez 2020)", MACHINE_SUPPORTS_SAVE )
 GAME( 2025, jurl,         neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Tonsomo Entertainment", "Jurl (2025-06-14)", MACHINE_SUPPORTS_SAVE )
 GAME( 2025, karnovn,      neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "iq132", "Karnov (Neo-Geo port)", MACHINE_SUPPORTS_SAVE )
 GAME( 2014, knightsch,    neogeo,   neogeo_noslot,   neogeo,  neogeo_state, init_neogeo,   ROT0, "Neobitz", "Knight's Chance", MACHINE_SUPPORTS_SAVE )

@@ -13,6 +13,7 @@ New Games
 - [doubledr22]          Double Dragon (Plus 2015-03-11)
 - [doubledr23]          Double Dragon (Optimized 2014-09-17)
 - [hypernoid01]         Hypernoid (2022-02-24)
+- [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
 - [mk2s07]              Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
 
@@ -196,7 +197,7 @@ New Games
 - [bpanicdx]            Block Panic DX (2025-01-01)
 - [flapchck]            Flappy Chicken (2023-04-30)
 - [goldaxen]            Golden Axe (Neo-Geo port)
-- [jumpnrund]           Jump n Run Tech Demo
+- [jumpnrund]           Jump n Run Tech Demo (Nov 2020)
 - [karnovn]             Karnov (Neo-Geo port)
 - [mpatrolut]           Moon Patrol (Unknown Territories)
 - [pown]                P.O.W. (Neo-Geo port) [iq_132]
