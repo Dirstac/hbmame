@@ -7,6 +7,7 @@
 
 New Games
 ---------------------------------
+- [breakrev09]          Breakers Revenge (Enhanced 2022-11-03)
 - [dksprfin3]           Donkey Kong Springfinity v1.03 (2023-09-17)
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]

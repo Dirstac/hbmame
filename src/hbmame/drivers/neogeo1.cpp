@@ -2223,6 +2223,28 @@ ROM_START( breakrev08 ) // extra
 	ROM_LOAD16_BYTE( "245.c6", 0x1000001, 0x400000, CRC(d0337328) SHA1(dff86b75dc283bd4512557a5c64f16e6be6c16e4) )
 ROM_END
 
+ROM_START( breakrev09 ) // brkrevjq, breakrevhc05
+	ROM_REGION( 0x200000, "maincpu", 0 )
+	ROM_LOAD16_WORD_SWAP( "245s09.p1", 0x000000, 0x100000, CRC(85779451) SHA1(5039199aa3084c29b7ea1b636a871a19fd251b98) )
+	ROM_LOAD16_WORD_SWAP( "245s09.p2", 0x100000, 0x100000, CRC(615bdad6) SHA1(825cff5aba66d650323174d69bb56a590cf27204) )
+
+	NEO_SFIX_128K( "245.s1", CRC(e7660a5d) SHA1(1cd54964ba60b245ea57d9daf0e27b572b815d21) )
+
+	NEO_BIOS_AUDIO_128K( "245.m1", CRC(00f31c66) SHA1(8488598415c9b74bce00e05b31d96e3d1625c20d) )
+
+	ROM_REGION( 0x800000, "ymsnd:adpcma", 0 )
+	ROM_LOAD( "245.v1", 0x000000, 0x400000, CRC(e255446c) SHA1(b3933340d49d4ba581f3bf1af7ad69d786205790) )
+	ROM_LOAD( "245.v2", 0x400000, 0x400000, CRC(9068198a) SHA1(71819b0475a5e173a2f9a6e4ff19a94655141c3c) )
+
+	ROM_REGION( 0x1800000, "sprites", 0 )
+	ROM_LOAD16_BYTE( "245.c1", 0x0000000, 0x400000, CRC(68d4ae76) SHA1(2e820067f6963669f104bebf19e865fe4127b4dd) )
+	ROM_LOAD16_BYTE( "245.c2", 0x0000001, 0x400000, CRC(fdee05cd) SHA1(efc4ffd790953ac7c25d5f045c64a9b49d24b096) )
+	ROM_LOAD16_BYTE( "245.c3", 0x0800000, 0x400000, CRC(645077f3) SHA1(0ae74f3b4b3b88f128c6d8c0f35ffa53f5d67ef2) )
+	ROM_LOAD16_BYTE( "245.c4", 0x0800001, 0x400000, CRC(63aeb74c) SHA1(9ff6930c0c3d79b46b86356e8565ce4fcd69ac38) )
+	ROM_LOAD16_BYTE( "245.c5", 0x1000000, 0x400000, CRC(b5f40e7f) SHA1(b332bac64dbb9a9dd66c5315f47ea08634d36f45) )
+	ROM_LOAD16_BYTE( "245.c6", 0x1000001, 0x400000, CRC(d0337328) SHA1(dff86b75dc283bd4512557a5c64f16e6be6c16e4) )
+ROM_END
+
 /************
  Fight Fever
 **************/
@@ -4887,6 +4909,7 @@ GAME( 1998, breakrev05,     breakrev, neogeo_noslot, neogeo, neogeo_state, init_
 GAME( 2009, breakrev06,     breakrev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Pipi899", "Breakers Revenge (Enhanced Power, 2009-06-11)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, breakrev07,     breakrev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "ZKW", "Breakers Revenge (Add hidden character)", MACHINE_SUPPORTS_SAVE )
 GAME( 1998, breakrev08,     breakrev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "MountainManJed", "Breakers Revenge (Extra)", MACHINE_SUPPORTS_SAVE )
+GAME( 2022, breakrev09,     breakrev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "GOTVG", "Breakers Revenge (Enhanced 2022-11-03)", MACHINE_SUPPORTS_SAVE )
 // Fight Fever
 GAME( 1994, fightfev01,     fightfev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "Yumeji", "Fight Fever (Enable Hidden Characters V1b)", MACHINE_SUPPORTS_SAVE )
 GAME( 1994, fightfev02,     fightfev, neogeo_noslot, neogeo, neogeo_state, init_neogeo,    ROT0, "hack", "Fight Fever (Fixed Kanji Display Of Some Special Attacks)", MACHINE_SUPPORTS_SAVE )
