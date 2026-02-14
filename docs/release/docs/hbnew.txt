@@ -3,7 +3,7 @@
 
 2026-0x-xx 0.245.31
 
-- Upgraded sf2prime to 0.72
+
 
 New Games
 ---------------------------------
@@ -15,8 +15,13 @@ New Games
 - [fatfury2s05]         Fatal Fury 2 (Alternate board)
 - [hypernoid01]         Hypernoid (2022-02-24)
 - [jumpnrund01]         Jump n Run Tech Demo (Dez 2020)
+- [lastblad37]          Last Blade (Infinite Energy 2023-04-17)
+- [lastblad38]          Last Blade (Special v2.5 Final)
+- [lastbld2s35]         Last Blade 2 (Infinite Energy 2023-02-02)
+- [lastbld2s36]         Last Blade 2 (Enhanced Edition 2014-04-09)
 - [mk08]                Mortal Kombat (rev 5.1, 2026-02-06)(Wolf h/w, beta) [Asure]
 - [mk2s07]              Mortal Kombat 2 (rev 3.2W, 2025-09-05)(Wolf h/w) [Asure]
+- [sf2prime]            Street Fighter II': Prime (v0.72)
 
 
 
